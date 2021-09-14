@@ -2,7 +2,7 @@ sudo apt update
 sudo apt upgrade
 wget https://git.io/Ju9hB -O wireguard-install.sh && sudo bash wireguard-install.sh # Install Wireguard
 sudo systemctl disable systemd-resolved # Disable built-in DNS resolver
-curl -sSL https://install.pi-hole.net | sudo bash # Install PiHole
+curl -sSL https://install.pi-hole.net | sudo bash # Install PiHole - !! Use wg0 network interface !!
 
 sudo wg # Check Wireguard Status
 pihole status # Check PiHole Status
